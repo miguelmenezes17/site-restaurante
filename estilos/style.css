@@ -75,13 +75,14 @@ header > nav > ul > li > a {
 header > nav > ul > li > a:hover {
     background-color: var(--cor4);
     border-right: 3px solid red;
+    transition-duration: 0.8s;
 }
 
 main {
     background-color: white;
     max-width: 380px;
-    margin: auto;
-    padding: 20px;
+    margin: auto auto -10px auto;
+    padding: 20px 20px 0px 20px;
 }
 
 main p {
@@ -90,7 +91,7 @@ main p {
 }
 
 article.box1 {
-    height: 640px;
+    height: 730px;
     background-color: rgba(240, 192, 130, 0.87);
     padding: 15px;
     margin-top: -20px;
@@ -101,11 +102,11 @@ article.box1 {
 }
 
 .box1 > p {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: var(--fonte-conteiner);
     text-align: center;
     max-width: 200px;
     margin: auto;
-    font-size: 20px;
+    font-size: 25px;
     color: rgba(0, 0, 0, 0.678);
 }
 
@@ -118,13 +119,13 @@ article.box1 {
     background-image: url(../imagens/pessoas01.jpg);
     width: 350px;
     height: 430px;
-    border: 1px solid black;
     box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.397);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     background-attachment: scroll;
     margin: 30px auto 35px auto;
+    border-radius: 10%;
 }
 
 section > article.txt {
@@ -192,12 +193,14 @@ section > article.txt > p {
     margin-top: 15px;
     margin-bottom: 15px;
 }
+
 .prod2 {
     height: 230px;
     border: 1px solid black;
     width: 230px;
     margin-bottom: 15px;
 }
+
 .prod3 {
     height: 230px;
     border: 1px solid black;
@@ -298,8 +301,88 @@ div.map {
     margin: 20px auto 20px auto;
 }
 
+section#opiniao {
+    height: 750px;
+}
 
+#opiniao {
+    background-image: url(../imagens/restaurantes02.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: -25px -20px 0px -20px;
+    padding: 10px;
+}
+
+#opiniao > .quad > div.opi {
+    width: 260px;
+    height: 200px;
+    margin: 25px auto 0px auto;
+    border-radius: 22px;
+    background-color: #61351ea9;
+    box-shadow: 3px 2px 4px #00000049;
+    padding: 6px;
+}
+
+#opiniao > .quad > .opi > .aspa > img {
+    position: relative;
+    left: 40%;
+}
+
+
+
+#opiniao > .quad > div.opi > h3 {
+    color: goldenrod;
+    text-align: right;
+    padding: 12px;
+}
+
+#opiniao > .quad > div.opi > p {
+    padding: 10px;
+    color: wheat;
+    text-align: justify;
+    text-indent: 10px;
+}
+
+section.texto {
+    background-color: var(--cor3);
+    color: wheat;
+    margin: 0px -20px 0px -20px;
+    height: 350px;
+}
+
+section.texto > p {
+    max-width: 210px;
+    margin: 0px 15px 15px auto;
+    padding: 40px 15px 10px 0px;
+    text-align: end;
+    font-size: 18px;
+    font-family: var(--fonte-titulo);
+}
+
+section#imag-dois {
+    height: 620px;
+    margin: 0px -20px 0px -20px;
+    background-image: url(../imagens/restaurante03-800x1067.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
 
 footer {
-    max-width: 300px;
+    background-color: var(--cor0);
+    margin: 11px auto 0px auto;
+    padding: 20px;
+}
+
+footer p {
+    color: wheat;
+    text-align: center;
+}
+
+footer p:hover {
+    color: blue;
+    cursor: pointer;
 }
