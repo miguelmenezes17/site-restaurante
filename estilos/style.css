@@ -45,14 +45,18 @@ header h1 {
     text-shadow: 3px 1px 2px rgba(0, 0, 0, 0.486);
 }
 
+span#burguer {
+    color: wheat;
+    cursor: pointer;
+}
+
 header > nav {
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     background-color: #bfbfbd1f;
-    flex-flow: row wrap;
-    justify-content: end;
     padding: 12px;
     border-radius: 20px;
+    max-width: 180px;
 }
 
 header > nav > ul > li {
@@ -68,14 +72,16 @@ header > nav > ul > li > a {
     color: white;
     text-decoration: none;
     border-right: 3px solid black;
-    border-top-left-radius: 12px;
-    border-bottom-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
 }
 
 header > nav > ul > li > a:hover {
     background-color: var(--cor4);
     border-right: 3px solid red;
     transition-duration: 0.8s;
+    padding: 12px 27px 12px 5px;
+    color: yellow;
 }
 
 main {
@@ -163,6 +169,7 @@ section > article.txt > p {
     border-radius: 8%;
     color: white;
     text-align: center;
+    box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.404);
 }
 
 .prod1 > .prod-fot {
@@ -261,7 +268,7 @@ div.foto1 {
 }
 
 .contact {
-    height: 620px;
+    height: 670px;
     border: 1px solid black;
     background-color: black;
     color: wheat;
