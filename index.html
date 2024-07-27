@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prato Bonito | Restaurante</title>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos-mediaqueries.css">
 </head>
@@ -19,7 +19,7 @@
                 <li><a href="#">Entrega</a></li>
                 <li><a href="#">Contato</a></li>
                 <li><a href="#">Pedidos</a></li>
-                <li><a href="#">Usuário</a></li>
+                <li><a href="usuario/usuario.html">Usuário</a></li>
             </ul>
         </nav>
     </header>
@@ -114,7 +114,8 @@
 
                 <ul>
                     <ol>Endereço:
-                        <address style="color: white;">R. Rio Branco, Professores, Cel. Fabriciano - MG, 35170-015</address>
+                        <address style="color: white;">R. Rio Branco, Professores, Cel. Fabriciano - MG, 35170-015
+                        </address>
 
                     </ol>
                 </ul>
@@ -155,23 +156,49 @@
         </section>
 
         <section class="texto">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quia provident, consectetur ipsam soluta
-                dignissimos. Illum aperiam eaque recusandae voluptate eligendi itaque? Iusto possimus asperiores libero
-                quia corrupti velit eius.</p>
+            <p>O melhor do prato mineiro e mais diversificado quando o negócio é falar de nutrição!</p>
         </section>
 
         <section id="imag-dois"></section>
+
+        <section class="texto-seg">
+            <p>Você não pode deixar de nos visitar! O melhor da comida mineira você encontra aqui!</p>
+        </section>
+
+        <section class="novidade">
+            <h2>Receba novidades sobre o nosso Restaurante</h2>
+            <p>Enviaremos no seu email, sempre que tivermos novidades para te contar!</p>
+            <div class="caixa">
+                <p>
+                    <label for="inom">Nome:</label>
+                    <br>
+                    <input type="text" name="nom" id="inom" placeholder="Ex: Maria Da Costa Ribeiro" class="campo">
+                </p>
+                <p>
+                    <label for="iemail">Email:</label>
+                    <br>
+                    <input type="email" name="" id="iemail" placeholder="Insira seu email mais utilizado:" class="campo">
+                </p>
+                <p>
+                    <label for="itel">Número de Contato:</label>
+                    <br>
+                    <input type="tel" name="tel" id="itel" maxlength="11" minlength="9" placeholder="Ex: 31 999995555" class="campo" autocomplete="on">
+                </p>
+                <p>
+                    <input type="button" value="Confirmar" class="confirm">
+                </p>
+            </div>
+
+        </section>
     </main>
     <footer>
         <p>&copy; Miguel Angell</p>
     </footer>
     <script>
-
         function mudouTamanho() {
             if (window.innerWidth >= 768) {
                 itens.style.display = 'block'
-            }
-            else {
+            } else {
                 itens.style.display = 'none'
             }
         }
@@ -179,11 +206,11 @@
         function clickMenu() {
             if (itens.style.display == 'block') {
                 itens.style.display = 'none'
-            }
-            else {
+            } else {
                 itens.style.display = 'block'
             }
         }
     </script>
 </body>
+
 </html>

@@ -4,6 +4,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
@@ -18,6 +20,7 @@
 
     --fonte-titulo: "Modern Antiqua", serif;
     --fonte-conteiner: "Sevillana", cursive;
+    --fonte-paragrafo: "Merienda", cursive;
 }
 
 body {
@@ -48,6 +51,11 @@ header h1 {
 span#burguer {
     color: wheat;
     cursor: pointer;
+    padding: 0px 6px 0px 12px;
+}
+
+span#burguer:hover {
+    color: rgb(112, 54, 0);
 }
 
 header > nav {
@@ -356,14 +364,29 @@ section.texto {
     background-color: var(--cor3);
     color: wheat;
     margin: 0px -20px 0px -20px;
-    height: 350px;
+    height: 300px;
 }
 
 section.texto > p {
     max-width: 210px;
     margin: 0px 15px 15px auto;
-    padding: 40px 15px 10px 0px;
+    padding: 75px 15px 10px 0px;
     text-align: end;
+    font-size: 18px;
+    font-family: var(--fonte-titulo);
+}
+
+section.texto-seg {
+    background-color: burlywood;
+    color: rgb(78, 51, 0);
+    margin: 0px -20px 0px -20px;
+    height: 300px;
+}
+
+section.texto-seg > p {
+    max-width: 210px;
+    margin: 0px auto 15px 25px;
+    padding: 75px 15px 10px 0px;
     font-size: 18px;
     font-family: var(--fonte-titulo);
 }
@@ -377,6 +400,72 @@ section#imag-dois {
     background-size: cover;
     background-attachment: fixed;
 }
+
+section.novidade {
+    height: 550px;
+    margin: 0px -20px 0px -20px;
+    padding: 18px;
+    box-shadow: 3px 1px 2px rgba(0, 0, 0, 0.226);
+    background-color: var(--cor0);
+}
+
+section.novidade h2 {
+    color: rgba(73, 73, 0, 0.733);
+    max-width: 290px;
+    text-align: center;
+    text-decoration: 1px wavy underline rgba(54, 58, 0, 0.466);
+    font-family: var(--fonte-titulo);
+    margin-bottom: 10px;
+}
+
+.novidade p {
+    font-family: var(--fonte-paragrafo);
+    text-align: justify;
+    padding: 10px;
+    text-shadow: 2px 1px 3px rgba(0, 0, 0, 0.274);
+    
+}
+
+.novidade label {
+    margin-bottom: 60px;
+    color: rgb(155, 101, 0);
+}
+
+.caixa {
+    background-color: rgba(192, 138, 0, 0.103);
+    border-radius: 18px;
+    box-shadow: 4px 2px 3px rgba(0, 0, 0, 0.116);
+    padding: 10px;
+}
+
+.novidade input.campo {
+    margin: 10px;
+    padding: 10px;
+    width: 270px;
+    box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.336);
+    border-radius: 12px;
+    border: 0px solid black;
+}
+
+.novidade input.confirm {
+    display: flex;
+    padding: 10px;
+    border-radius: 12px;
+    border: 0px solid black;
+    margin: auto;
+    font-family: var(--fonte-titulo);
+}
+
+.novidade input.confirm:hover {
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+.novidade input.campo:hover {
+    border: 3px solid rgb(255, 161, 53);
+}
+
+
 
 footer {
     background-color: var(--cor0);
