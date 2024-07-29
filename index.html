@@ -5,23 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prato Bonito | Restaurante</title>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos-mediaqueries.css">
+    <link rel="stylesheet" href="estilos/estilos-mediaqueries.css">
+
+<!--
+    https://cdnjs.com/libraries/font-awesome
+
+    https://fontawesome.com/
+    
+    -->
 </head>
 
-<body onresize="mudouTamanho()">
+<body>
     <header>
         <h1>Conheça o Restaurante Prato Bonito!</h1>
-        <span class="material-symbols-outlined" id="burguer" onclick="clickMenu()">Menu</span>
-        <nav id="itens">
+        <nav class="navigation">
             <ul>
-                <li><a href="#">Entrega</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">Pedidos</a></li>
-                <li><a href="usuario/usuario.html">Usuário</a></li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <i class="fa-solid fa-truck"></i>
+                        </span>
+                        <span class="icon">Entrega</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <i class="fa-solid fa-comment"></i>
+                        </span>
+                    <span class="icon">Contato</span>
+                </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </span>
+                        <span class="icon">Pedidos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="usuario/usuario.html">
+                        <span class="icon">
+                            <i class="fa-solid fa-user"></i>
+                        </span>
+                        <span class="icon">Usuário</span>
+                    </a>
+                </li>
             </ul>
         </nav>
+        <div class="toggle" onclick="toggleMenu()"></div>
     </header>
     <main>
         <section>
@@ -193,23 +228,6 @@
     <footer>
         <p>&copy; Miguel Angell</p>
     </footer>
-    <script>
-        function mudouTamanho() {
-            if (window.innerWidth >= 768) {
-                itens.style.display = 'block'
-            } else {
-                itens.style.display = 'none'
-            }
-        }
-
-        function clickMenu() {
-            if (itens.style.display == 'block') {
-                itens.style.display = 'none'
-            } else {
-                itens.style.display = 'block'
-            }
-        }
-    </script>
+    <script src="arquivo.js"></script>
 </body>
-
 </html>
