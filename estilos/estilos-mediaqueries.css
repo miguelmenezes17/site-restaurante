@@ -16,11 +16,19 @@ Grandes Telas: Acima de 1200px;
     main {
         max-width: 500px;
     }
+
+    header .navigation {
+        height: 68.7%;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
     main {
         max-width: 600px;
+    }
+
+    header .navigation {
+        height: 68.7%;
     }
 }
 
@@ -28,10 +36,18 @@ Grandes Telas: Acima de 1200px;
     main {
         max-width: 710px;
     }
+
+    header .navigation {
+        height: 68.7%;
+    }
 }
 
 @media screen and (min-width: 1200px) {
     main {
         max-width: 850px;
+    }
+
+    header .navigation {
+        height: 68.7%;
     }
 }
