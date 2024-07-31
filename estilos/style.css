@@ -30,6 +30,7 @@ body {
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 header {
@@ -383,8 +384,19 @@ div.foto1 {
     color: burlywood;
 }
 
-div.map {
+.map {
     margin: 20px auto 20px auto;
+    border: 1px solid white;
+    max-width: 325px;
+    height: 105px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.map p {
+    text-align: center;
+    position: relative;
+    top: 25%;
 }
 
 section#opiniao {
@@ -415,8 +427,6 @@ section#opiniao {
     position: relative;
     left: 40%;
 }
-
-
 
 #opiniao > .quad > div.opi > h3 {
     color: goldenrod;
@@ -535,8 +545,6 @@ section.novidade h2 {
 .novidade input.campo:hover {
     border: 3px solid rgb(255, 161, 53);
 }
-
-
 
 footer {
     background-color: var(--cor0);
