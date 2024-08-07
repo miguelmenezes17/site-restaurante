@@ -36,6 +36,114 @@ Grandes Telas: Acima de 1200px;
     .map {
         margin: 30px auto;
     }
+
+    .box1 > p {
+        max-width: 330px;
+        margin-top: 10px;
+        font-size: 26px;
+        height: 150px;
+    }
+
+    .box1 > .imagens > .pessoas {
+        height: 520px;
+        width: 460px;
+        background-image: url(../imagens/pessoas03.jpg);
+    }
+
+    section > article.txt > p {
+        max-width: 400px;
+    }
+
+    .produtos {
+        height: 880px;
+        background-color: rgb(51, 35, 13);
+    }
+
+    .produtos > div.prod1, .prod2, .prod3 {
+        width: 310px; 
+        height: 250px;
+    }
+
+    .contact {
+        margin: 0px -20px 25px -20px;
+        height: 820px;
+
+    }
+
+    section#imag {
+        height: 900px;
+    }
+
+    #imag > .conteiner {
+        width: 300px;
+        height: 820px;
+    }
+
+    .foto {
+        margin: 30px auto;
+        padding: 30px;
+    }
+
+    #imag p {
+        margin: 80px;
+    }
+
+    .foto1 {
+        margin: 30px auto;
+        padding: 30px;
+    }
+
+    .box2 {
+        padding: 40px;
+        margin: 5px;
+    }
+
+    .box2 h2 {
+        padding-left: 20px;
+    }
+
+    .info h3 {
+        padding-bottom: 20px;
+        font-size: 1.3em;
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    .info ul {
+        padding: 12px;
+        max-width: 310px;
+        background-color: rgba(19, 19, 19, 0.445);
+        margin: 0px auto 0px auto;
+    }
+
+    .map {
+        height: 170px;
+    }
+
+    #opiniao > .quad > div.opi {
+        width: 340px;
+    }
+
+    section.texto > p {
+        font-size: 20px;
+        margin: 0px 50px 21px auto;
+        padding: 75px 40px 10px 0px;
+    }
+
+    section.texto-seg > p {
+        font-size: 20px;
+        margin: 0px auto 31px 54px;
+        padding: 75px 15px 10px 2px;
+    }
+
+    section.novidade h2 {
+        font-size: 1.7em;
+    }
+
+    section.novidade p {
+        padding: 8px;
+        text-align: center;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
