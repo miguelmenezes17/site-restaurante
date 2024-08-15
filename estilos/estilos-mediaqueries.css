@@ -113,7 +113,7 @@ Grandes Telas: Acima de 1200px;
         padding: 12px;
         max-width: 310px;
         background-color: rgba(19, 19, 19, 0.445);
-        margin: 0px auto 0px auto;
+        margin: 8px auto 0px auto;
     }
 
     .map {
@@ -158,6 +158,143 @@ Grandes Telas: Acima de 1200px;
     main {
         max-width: 600px;
     }
+
+    header h1 {
+        font-size: 3em;
+        max-width: 480px;
+        bottom: 467px;
+    }
+
+    .box1 p {
+        max-width: 340px;
+        background-color: rgba(105, 75, 0, 0.308);
+        color: rgba(255, 255, 255, 0.733);
+        margin: -15px auto -12px auto;
+        padding-left: 90px;
+        padding-right: 90px;
+        border-bottom-left-radius: 5%;
+        border-bottom-right-radius: 5%;
+    }
+
+    .box1 > .imagens > div.pessoas {
+        width: 456px;
+        height: 500px;
+        background-image: url(../imagens/pessoas04.jpg);
+        background-position: left bottom;
+    }
+
+    section > article.txt > p {
+        max-width: 320px;
+        font-size: 1.5em;
+        text-shadow: 6px 1px 8px rgba(245, 222, 179, 0.185);
+        margin: 0px auto 0px auto;
+    }
+
+    section.produtos {
+        box-shadow: 3px 1px 2px rgba(0, 0, 0, 0.411);
+        height: 1150px;
+    }
+
+    .produtos > div.prod1, .prod2, .prod3 {
+        width: 410px;
+        height: 340px;
+    }
+
+    .produtos > div.prod1, .prod2, .prod3 > p {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .prod1 > .prod-fot, .prod2 > .prod-fot1, .prod3 > .prod-fot2 {
+        margin-top: 40px;
+        height: 180px;
+        width: 180px;
+    }
+
+    div.conteiner {
+        width: 350px;
+    }
+
+    div.foto {
+        margin: auto;
+    }
+
+    div.foto1 {
+        margin: auto;
+    }
+
+    .contact {
+        height: 800px;
+    }
+
+    .contact > .box2 > h2 {
+        padding-right: 70px;
+    }
+
+    .contact > .info > h3 {
+        text-align: center;
+        font-size: 1.4em;
+        color: goldenrod;
+        text-shadow: 3px 1px 4px rgba(218, 165, 32, 0.26);
+    }
+
+    .contact > .info > ul {
+        max-width: 350px;
+        margin: 30px auto 30px auto;
+        padding: 20px;
+    }
+
+    section#opiniao {
+        height: 1040px;
+    }
+
+    #opiniao > .quad > div.opi {
+        width: 400px;
+        height: 280px;
+    }
+
+    #opiniao > .quad > div.opi > p {
+        max-width: 190px;
+        font-size: 1.2em;
+        text-align: center;
+        margin: auto;
+    }
+
+    section.texto > p {
+        font-size: 1.5em;
+        max-width: 230px;
+        margin-right: 30px;
+    }
+
+    section.texto-seg > p {
+        font-size: 1.5em;
+        max-width: 240px;
+        margin-left: 30px;
+    }
+
+    section.novidade {
+        height: 850px;
+    }
+
+    section.novidade h2 {
+        font-size: 26px;
+        max-width: 360px;
+    }
+
+    section.novidade p {
+        margin: 30px;
+    }
+
+    section.novidade > div.caixa {
+        padding: 40px;
+    }
+
+    section.novidade > div.caixa > p {
+        text-align: center;
+        background-color: #e2b24b2f;
+        border-radius: 10px;
+        padding: 20px;
+    }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
@@ -182,6 +319,12 @@ Grandes Telas: Acima de 1200px;
         background-attachment: fixed;
     }
     main {
-        max-width: 850px;
+        max-width: 1000px;
+    }
+
+    header h1 {
+        font-size: 3em;
+        max-width: 480px;
+        bottom: 467px;
     }
 }

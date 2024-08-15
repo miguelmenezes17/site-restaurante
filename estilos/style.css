@@ -169,6 +169,9 @@ main {
     max-width: 380px;
     margin: auto auto -10px auto;
     padding: 20px 20px 0px 20px;
+    transition: 1.2s;
+    transition-duration: 1.2s;
+    transition-timing-function: ease;
 }
 
 main p {
@@ -254,6 +257,8 @@ section > article.txt > p {
 
 .prod1 > .prod-fot {
     background-image: url(../imagens/prato-circ001.png);
+    background-repeat: no-repeat;
+    background-position: center center;
     width: 150px;
     height: 150px;
     margin: auto;
@@ -261,6 +266,8 @@ section > article.txt > p {
 
 .prod2 > .prod-fot1 {
     background-image: url(../imagens/prato-circ002.png);
+    background-repeat: no-repeat;
+    background-position: center center;
     width: 150px;
     height: 150px;
     margin: auto;
@@ -268,6 +275,8 @@ section > article.txt > p {
 
 .prod3 > .prod-fot2 {
     background-image: url(../imagens/prato-circ003.png);
+    background-repeat: no-repeat;
+    background-position: center center;
     width: 150px;
     height: 150px;
     margin: auto;
@@ -552,12 +561,15 @@ footer {
     padding: 20px;
 }
 
-footer p {
-    color: wheat;
+footer > p {
     text-align: center;
 }
 
-footer p:hover {
+footer > p > a {
+    color: wheat;
+}
+
+footer > p > a:hover {
     color: blue;
     cursor: pointer;
 }
