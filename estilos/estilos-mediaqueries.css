@@ -376,4 +376,95 @@ Grandes Telas: Acima de 1200px;
     div.conteiner {
         width: 390px;
     }
+
+    div.conteiner p {
+        max-width: 340px;
+        margin: auto;
+        position: relative;
+        top: 20%;
+    }
+
+    div.foto {
+        margin: auto;
+        max-width: 360px;
+    }
+
+    div.foto1 {
+        margin: auto;
+        max-width: 360px;
+    }
+
+    section.contact > .box2 > h2 {
+        margin-right: 20px;
+        font-size: 2em;
+    }
+
+    section.contact > div.info > h3 {
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    section.contact > div.info > ul {
+        max-width: 540px;
+        padding: 15px;
+        margin: 10px auto;
+    }
+
+    section.contact > div.info > ul > ol {
+        text-align: center;
+    }
+
+    section.contact > div.info > div.map {
+        max-width: 500px;
+    }
+
+    section#opiniao {
+        height: 950px;
+    }
+
+    section#opiniao > .quad > .opi {
+        width: 350px;
+        height: 270px;
+    }
+
+    section#opiniao > .quad > .opi > h3 {
+        text-align: center;
+        font-size: 1.7em;
+    }
+
+    section#opiniao > .quad > .opi > p {
+        max-width: 250px;
+        margin: auto;
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    section.texto p {
+        font-size: 1.5em;
+        max-width: 400px;
+        margin-right: 10px;
+    }
+
+    section.texto-seg > p {
+        max-width: 400px;
+        font-size: 1.4em
+    }
+
+    section.novidade h2 {
+        max-width: 500px;
+        text-align: center;
+        margin: auto;
+    }
+
+    section.novidade p {
+        text-align: center;
+        margin: auto;
+
+    }
+
+    div.caixa {
+        max-width: 550px;
+        margin: auto;
+        
+    }
 }
