@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+:root {
+    --cor0: #a686247c;
+    --cor1: #BFBFBD;
+    --cor2: #d95204c2;
+    --cor3: #8C5230;
+    --cor4: #403131;
+
+    --fonte-titulo: "Modern Antiqua", serif;
+    --fonte-conteiner: "Sevillana", cursive;
+    --fonte-paragrafo: "Merienda", cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url(../imagens/login01.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 4px 2px 3px rgba(0, 0, 0, 0.425);
+    min-width: 270px;
+    height: 500px;
+    margin: auto;
+    padding: 20px;
+}
+
+main > form > h1 {
+    color: #8C5230;
+    text-align: center;
+    margin: 10px;
+    max-width: 500px;
+    font-family: var(--fonte-titulo);
+    text-decoration: 1px solid underline;
+    text-shadow: 4px 1px 2px rgba(0, 0, 0, 0.253);
+}
+
+main > form {
+    margin: -16px -6px 0px -6px;
+    background-color: var(--cor0);
+    height: 480px;
+    border-radius: 12px;
+}
+
+
+main > form > ul {
+    margin: auto;
+    
+}
+
+main > form > ul > li {
+    list-style-type: none;
+    background-color: #403131;
+    padding: 4px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 5px 40px 0px 40px;
+}
+
+main > form > ul > li > a {
+    text-decoration: none;
+    color: white;
+    margin: auto;
+    text-align: center;
+    padding: 4px 8px 5px 8px;
+}
+
+main > form > ul > li > a:hover {
+    color: rgb(0, 0, 0);
+    background-color: var(--cor3);
+    transition: ease;
+    transition-duration: 0.5s;
+}
+
+main > form > p {
+    text-align: justify;
+    text-indent: 8px;
+    font-family: var(--fonte-paragrafo);
+    padding: 8px;
+    font-size: 14px;
+    text-indent: 9px;
+    line-height: 20px;
+}
+
+p label {
+    color: #8C5230;
+    text-decoration: 1px solid underline #8C5230;
+}
+
+input.espace {
+    max-width: 200px;
+    margin: 10px;
+    border: 1.5px solid black;
+    padding: 6px;
+    border-radius: 6px;
+
+}
+
+input.espace:hover {
+    border: 2px solid var(--cor3);
+}
+
+div > p {
+    text-align: center;
+
+}
+
+div > p > .button {
+    margin: 15px;
+    padding: 9px 22px 9px 22px;
+    border: 1px solid rgba(0, 0, 0, 0.644);
+    border-radius: 18px;
+    background-color: var(--cor3);
+    color: white;
+}
+
+div > p > .button:hover {
+    color: wheat;
+    background-color: #af663bbd;
+}
+
+footer {
+    position: relative;
+    top: 92.9%;
+    background-color: var(--cor2);
+    padding: 18px;
+}
+
+footer p {
+    color: wheat;
+    text-align: center;
+}
+
+footer p:hover {
+    color: blue;
+    text-decoration: 1px solid underline black;
+    cursor: pointer;
+}

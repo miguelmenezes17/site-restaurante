@@ -1,5 +1,17 @@
 @charset "UTF-8";
 
+:root {
+    --cor0: #a686247c;
+    --cor1: #BFBFBD;
+    --cor2: #d95204c2;
+    --cor3: #8C5230;
+    --cor4: #403131;
+
+    --fonte-titulo: "Modern Antiqua", serif;
+    --fonte-conteiner: "Sevillana", cursive;
+    --fonte-paragrafo: "Merienda", cursive;
+}
+
 /*
 Pequenas Telas: até 600px;
 
@@ -326,5 +338,42 @@ Grandes Telas: Acima de 1200px;
         font-size: 3em;
         max-width: 480px;
         bottom: 467px;
+    }
+
+    article.box1 {
+        height: 870px;
+    }
+
+    .box1 > p{
+        max-width: 260px;
+        font-weight: bolder;
+    }
+
+    .box1 > .imagens > .pessoas {
+        width: 450px;
+        height: 530px;
+    }
+
+    section > article.txt > p {
+        max-width: 360px;
+        text-decoration: 1px overline;
+        color: var(--cor3);
+        text-shadow: 3px solid var(--cor3);
+    }
+    
+    section.produtos {
+       height: 1050px;
+    }
+
+    section.produtos > .prod1, .prod2, .prod3 {
+        height: 300px;
+        width: 350px;
+        background-color: #e2b73550;
+        border: none;
+        box-shadow: 3px 1px 2px solid rgba(39, 39, 39, 0.199);
+    }
+
+    div.conteiner {
+        width: 390px;
     }
 }

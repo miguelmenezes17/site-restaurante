@@ -1,24 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Restaurante Prato Bonito | Área do Usuário</title>
     <link rel="stylesheet" href="estilos/usuario.css">
 </head>
+
 <body>
     <header>
-        <h1>Area de Login do Usuário</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Página Principal</a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-            </ul>
-        </nav>
+
     </header>
     <main>
+        <form action="login.php" method="post">
+            <h1>Area de Login do Usuário</h1>
+                <ul>
+                    <li><a href="../index.html">Página Principal</a></li>
+                </ul>
 
+            <p>Preencha os dados, para acessar a aba de Clientes:</p>
+
+            <div class="fundo-png">
+                <p>
+                    <label for="usu">Usuario: </label>
+                    <input type="text" name="" id="usu" class="espace">
+                </p>
+                <p>
+                    <label for="sen">Senha: </label>
+                    <input type="password" name="" id="sen" class="espace">
+                </p>
+                <p>
+                    <label for="tel">Telefone: </label>
+                    <input type="tel" name="" id="tel" class="espace">
+                </p>
+            
+
+                <div>
+                    <p class="button">
+                        <input type="submit" value="Acessar" class="button">
+                        <input type="reset" value="Limpar" onclick="limpar()" class="button">
+                    </p>
+                </div>
+            </div>
+        </form>
     </main>
+    <footer>
+        <p>&copy; Miguel Angell</p>
+    </footer>
+
+    <script>
+        function limpar() {
+            var limpar = window.document.getElementsByClassName(button);
+
+        }
+    </script>
 </body>
+
 </html>
